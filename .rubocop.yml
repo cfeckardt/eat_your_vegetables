@@ -2,6 +2,12 @@ AllCops:
   Exclude:
     - 'Gemfile'
     - 'vendor/**/*'
+    - eat_your_vegetables.gemspec
+    - spec/spec_helper.rb
+    - lib/eat_your_vegetables/tools/base.rb
+    - lib/eat_your_vegetables/tools/rubocop.rb
+    - lib/eat_your_vegetables/ambition.rb
+    - lib/eat_your_vegetables.rb
 
 Style/Documentation:
   Enabled: true
