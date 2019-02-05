@@ -11,7 +11,7 @@ Force your team to incrementally improve your code base with every commit to mas
   gem.license       = 'MIT'
   gem.authors       = ['Fredrik Eckardt']
   gem.email         = 'cfeckardt@gmail.com'
-  gem.homepage      = 'https://rubygems.org/gems/eat_your_vegetables'
+  gem.homepage      = 'https://github.com/cfeckardt/eat_your_vegetables'
 
   gem.files         = `git ls-files`.split($INPUT_RECORD_SEPARATOR)
 

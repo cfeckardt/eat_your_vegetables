@@ -1,7 +1,5 @@
 # Eat Your Vegetables
 
-* [Homepage](https://rubygems.org/gems/eat_your_vegetables)
-* [Documentation](http://rubydoc.info/gems/eat_your_vegetables/frames)
 * [Email](mailto:cfeckardt@gmail.com)
 
 ## Description
