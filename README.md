@@ -2,6 +2,8 @@
 
 * [Email](mailto:cfeckardt@gmail.com)
 
+_NOTE THIS IS A WORK IN PROGRESS. DOCUMENTATION AND SOFTWARE IS INCOMPLETE_
+
 ## Description
 Eat Your Vegetables is a tool that aims to help you improve your codebase over
 time. You configure the ambition that you want to set, that is, which files do
