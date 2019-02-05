@@ -20,6 +20,8 @@ module EatYourVegetables
       end
 
       def step_difference
+        return 0 unless is_configed?
+
         parent_exclusions = excluded_files(parent_file_contents)
         current_exclusions = excluded_files(current_file_contents)
 
@@ -35,6 +37,12 @@ module EatYourVegetables
 
       def current_file_contents
         File.read(config_file)
+      end
+
+      def is_configed?
+        File.file?(config_file) && !parent_file_contents.empty?
+      rescue Errno::ENOENT
+        false
       end
 
       protected
