@@ -31,7 +31,6 @@ Force your team to incrementally improve your code base with every commit to mas
   gem.add_dependency 'rake', '~> 12.3.2'
 
   gem.add_development_dependency 'bundler', '~> 1.10'
-  gem.add_development_dependency 'rake', '~> 10.0'
   gem.add_development_dependency 'rspec', '~> 3.0'
   gem.add_development_dependency 'rubygems-tasks', '~> 0.2'
   gem.add_development_dependency 'yard', '~> 0.8'
