@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'eat_your_vegetables'
+
+EatYourVegetables::Runner.new.run
