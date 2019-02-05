@@ -11,7 +11,7 @@ Gem::Specification.new do |gem|
   gem.description   = %q{TODO: Description}
   gem.license       = "MIT"
   gem.authors       = ["Fredrik Eckardt"]
-  gem.email         = "fredrik.eckardt@coinbase.com"
+  gem.email         = "cfeckardt@gmail.com"
   gem.homepage      = "https://rubygems.org/gems/eat_your_vegetables"
 
   gem.files         = `git ls-files`.split($/)
