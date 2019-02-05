@@ -11,7 +11,9 @@ module EatYourVegetables
       end
 
       def excluded_files(content)
-        yaml = YAML.load_file(content)
+        yaml = YAML.load(content)
+
+        yaml['AllCops']['Exclude']
       end
     end
   end

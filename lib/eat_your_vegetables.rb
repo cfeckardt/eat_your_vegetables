@@ -12,13 +12,16 @@ module EatYourVegetables
       instance_eval(veggies)
 
       step_difference = @tools.reduce(0) do |acc, tool|
-        acc + tool.step_difference
+        (acc + tool.step_difference)
       end
 
       if @tools.any? &:is_configed?
-        if step_difference <= 0
+        if step_difference == 0
           puts "Sorry, I can't let you do that"
           exit 1
+        else
+          puts "Thanks, for eating your veggies."
+          exit 0
         end
       else
         puts 'It appears there are no vegetables to eat'

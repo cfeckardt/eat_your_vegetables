@@ -25,7 +25,7 @@ module EatYourVegetables
         parent_exclusions = excluded_files(parent_file_contents)
         current_exclusions = excluded_files(current_file_contents)
 
-        (current_exclusions - parent_exclusions).count
+        (parent_exclusions - current_exclusions).count
       end
 
       def parent_file_contents
