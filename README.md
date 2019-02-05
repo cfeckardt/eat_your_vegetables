@@ -66,6 +66,8 @@ Please contribute by adding set up instructions for other CIs.
 
 ## Contributing
 
+Nothing special here! Contributions are welcome!
+
 ## Copyright
 
 Copyright (c) 2019 Fredrik Eckardt
