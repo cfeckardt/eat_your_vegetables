@@ -88,8 +88,5 @@ Layout/IndentHash:
 Style/MultilineBlockChain:
   Enabled: false
 
-Style/TrailingCommaInLiteral:
-  Enabled: false
-
 RSpec/Focused:
   Enabled: true

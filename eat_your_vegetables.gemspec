@@ -1,31 +1,30 @@
-# -*- encoding: utf-8 -*-
-
-lib = File.expand_path('../lib', __FILE__)
+lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'eat_your_vegetables/version'
 
 Gem::Specification.new do |gem|
-  gem.name          = "eat_your_vegetables"
+  gem.name          = 'eat_your_vegetables'
   gem.version       = EatYourVegetables::VERSION
-  gem.summary       = %q{With Eat Your Vegetables Code}
-  gem.description   = %q{TODO: Description}
-  gem.license       = "MIT"
-  gem.authors       = ["Fredrik Eckardt"]
-  gem.email         = "cfeckardt@gmail.com"
-  gem.homepage      = "https://rubygems.org/gems/eat_your_vegetables"
+  gem.summary       = 'Eat Your Vegetables lets you incrementally improve code quality over time'
+  gem.description   = 'Use EYV to incrementally improve code quality in your project.
+Force your team to incrementally improve your code base with every commit to master.'
+  gem.license       = 'MIT'
+  gem.authors       = ['Fredrik Eckardt']
+  gem.email         = 'cfeckardt@gmail.com'
+  gem.homepage      = 'https://rubygems.org/gems/eat_your_vegetables'
 
-  gem.files         = `git ls-files`.split($/)
+  gem.files         = `git ls-files`.split($INPUT_RECORD_SEPARATOR)
 
-  `git submodule --quiet foreach --recursive pwd`.split($/).each do |submodule|
-    submodule.sub!("#{Dir.pwd}/",'')
+  `git submodule --quiet foreach --recursive pwd`.split($INPUT_RECORD_SEPARATOR).each do |submodule|
+    submodule.sub!("#{Dir.pwd}/", '')
 
     Dir.chdir(submodule) do
-      `git ls-files`.split($/).map do |subpath|
-        gem.files << File.join(submodule,subpath)
+      `git ls-files`.split($INPUT_RECORD_SEPARATOR).map do |subpath|
+        gem.files << File.join(submodule, subpath)
       end
     end
   end
-  gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
+  gem.executables   = gem.files.grep(%r{^bin/}).map { |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ['lib']
 

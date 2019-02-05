@@ -21,7 +21,7 @@ module EatYourVegetables
           exit 1
         end
       else
-        puts "It appears there are no vegetables to eat"
+        puts 'It appears there are no vegetables to eat'
         exit 0
       end
     end
@@ -34,12 +34,10 @@ module EatYourVegetables
       @tools << EatYourVegetables::Tools::Rubocop.new(parent_branch: 'master')
     end
 
-    def simplecov
-    end
+    def simplecov; end
 
     private
-    def step_difference
 
-    end
+    def step_difference; end
   end
 end

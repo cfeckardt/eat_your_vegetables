@@ -12,7 +12,7 @@ module EatYourVegetables
       def filter(file)
         if file.is_a? Array
           file.each do |f|
-            self.filter f
+            filter f
           end
         end
 
@@ -51,7 +51,7 @@ module EatYourVegetables
         raise NotImplementedError
       end
 
-      def excluded_files(content)
+      def excluded_files(_content)
         raise NotImplementedError
       end
     end
