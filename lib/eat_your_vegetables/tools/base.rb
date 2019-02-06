@@ -6,17 +6,6 @@ module EatYourVegetables
     class Base
       def initialize(parent_branch:)
         @parent_branch = parent_branch
-        @ambition_filter = []
-      end
-
-      def filter(file)
-        if file.is_a? Array
-          file.each do |f|
-            filter f
-          end
-        end
-
-        @ambition_filter << file
       end
 
       def step_difference
@@ -29,7 +18,7 @@ module EatYourVegetables
       end
 
       def parent_file_contents
-        cmdstr = "git show origin/master:#{config_file}"
+        cmdstr = "git show origin/#{@parent_branch}:#{config_file}"
         stdout, stderr, status = Open3.capture3(cmdstr)
 
         stdout
