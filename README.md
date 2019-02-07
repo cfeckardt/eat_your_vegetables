@@ -18,10 +18,10 @@ that number hasn't decreased.
 
 ## Features
 Support for linters, coverage and test tools. For a full list of support tools
-see SUPPORTED_TOOLS.md
+see [SUPPORTED_TOOLS.md](docs/SUPPORTED_TOOLS.md)
 
 This project is still in early days so _please_ add support for your framework
-if it is missing. There is a simple guide here: ADDING_FRAMEWORKS.md
+if it is missing. There is a simple guide here: [ADDING_ADAPTERS.md](docs/ADDING_ADAPTERS.md)
 
 ## Requirements
 
@@ -37,9 +37,12 @@ be executing your environment with git available.
 Eat Your Vegetables is intended to be run with
 
 ### With docker
+
+_Please note this does not work yet_
+
 For all you hip kids out there, there's a Dockerfile!
 
-`docker run eat_your_vegetables:latest`
+`docker run cfeckardt/eat_your_vegetables:latest`
 
 ## Configuration
 
@@ -58,11 +61,32 @@ simplecov
 
 #### Gitlab
 
-#### Circle CI
+_No instructions yet_
+
+#### Travis
+
+```yaml
+---
+language: ruby
+before_script:
+  - gem install eat_your_vegetables
+script:
+  - bundle exec eat_your_vegetables
+
+```
 
 #### Other
 
+In order to run _eyv_ in your CI suite you need to:
+
+1. Ensure git is installed
+2. Ensure ruby is installed
+3. Run `gem intall eat_your_vegetables`
+4. Run `bundle exec eat_your_vegetables` or just `eat_your_vegetables`
+
 Please contribute by adding set up instructions for other CIs.
+
+
 
 ## Contributing
 
