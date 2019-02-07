@@ -1,5 +1,6 @@
 module EatYourVegetables
   module Tools
+    # Simplecov provides integration with the Simplecov coverage framework
     class Simplecov < Base
       attr_writer :config_file
 

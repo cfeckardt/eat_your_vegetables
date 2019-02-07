@@ -2,7 +2,7 @@
 
 * [Email](mailto:cfeckardt@gmail.com)
 
-_NOTE THIS IS A WORK IN PROGRESS. DOCUMENTATION AND SOFTWARE IS INCOMPLETE_
+_NOTE THIS IS A WORK IN PROGRESS. DOCUMENTATION AND SOFTWARE IS INCOMPLETE AND IS PROVIDED ON AS IS. PLEASE HELP MY CONTRIBUTING_
 
 ## Description
 Eat Your Vegetables is a tool that aims to help you improve your codebase over
@@ -59,10 +59,6 @@ simplecov
 
 ### Setting up CI
 
-#### Gitlab
-
-_No instructions yet_
-
 #### Travis
 
 ```yaml
@@ -85,8 +81,6 @@ In order to run _eyv_ in your CI suite you need to:
 4. Run `bundle exec eat_your_vegetables` or just `eat_your_vegetables`
 
 Please contribute by adding set up instructions for other CIs.
-
-
 
 ## Contributing
 
