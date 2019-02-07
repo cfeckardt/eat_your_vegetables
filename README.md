@@ -1,8 +1,8 @@
 # Eat Your Vegetables
 
-* [Email](mailto:cfeckardt@gmail.com)
+![Demo](docs/render.gif)
 
-_NOTE THIS IS A WORK IN PROGRESS. DOCUMENTATION AND SOFTWARE IS INCOMPLETE AND IS PROVIDED ON AS IS. PLEASE HELP MY CONTRIBUTING_
+_NOTE THIS IS A WORK IN PROGRESS. DOCUMENTATION AND SOFTWARE IS INCOMPLETE AND IS PROVIDED ON AS IS. PLEASE HELP BY CONTRIBUTING_
 
 ## Description
 Eat Your Vegetables is a tool that aims to help you improve your codebase over
