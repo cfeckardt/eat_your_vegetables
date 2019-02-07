@@ -38,11 +38,11 @@ Eat Your Vegetables is intended to be run with
 
 ### With docker
 
-_Please note this does not work yet_
-
 For all you hip kids out there, there's a Dockerfile!
 
-`docker run cfeckardt/eat_your_vegetables:latest`
+```bash
+$ docker run --mount type=bind,source=`pwd`,target=/data cfeckardt/eat_your_vegetables:latest
+```
 
 ## Configuration
 
