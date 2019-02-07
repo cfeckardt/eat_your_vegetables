@@ -11,10 +11,15 @@ module EatYourVegetables
       def step_difference
         return 0 unless is_configed?
 
-        parent_exclusions = excluded_files(parent_file_contents)
-        current_exclusions = excluded_files(current_file_contents)
-
         (parent_exclusions - current_exclusions).count
+      end
+
+      def parent_exclusions
+        @parent_exclusions ||= excluded_files(parent_file_contents)
+      end
+
+      def current_exclusions
+        @current_exclusions ||= excluded_files(current_file_contents)
       end
 
       def parent_file_contents

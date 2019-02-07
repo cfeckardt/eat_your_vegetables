@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
-require 'eat_your_vegetables'
+$LOAD_PATH.unshift(File.expand_path('../lib'))
+
+require_relative '../lib/eat_your_vegetables.rb'
 
 EatYourVegetables::Runner.new.run
