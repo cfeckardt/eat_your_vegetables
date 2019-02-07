@@ -25,7 +25,7 @@ Style/Indentation:
     - file2.rb
 ```
 
-###Simplecov
+### Simplecov
 
 The simplecov adapter supports the following options:
 
@@ -44,4 +44,3 @@ Simplecov.start do
   add_filter "file1.rb"
 end
 ```
-
